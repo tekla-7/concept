@@ -1,0 +1,14 @@
+{
+  "name": "name",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "tekle",
+  "license": "ISC",
+  "description": ""
+ 
+}
