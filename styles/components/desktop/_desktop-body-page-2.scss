@@ -1,0 +1,386 @@
+@media screen and (min-width:$desktop-width) {
+    .body {
+
+        .offers-slider-component {
+            padding: 60px 0;
+
+            .offers-text {
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 36px;
+                display: flex;
+
+                .name {
+                    color: #141719;
+                    margin-top: 0;
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+
+            }
+
+            .slider-component {
+                max-width: 100%;
+
+                .slider-wrapper {
+                    position: relative;
+
+                    .image-list {
+                        display: grid;
+                        gap: 30px;
+                        margin-bottom: 38px;
+                        grid-template-columns: repeat(6, 1fr);
+                        overflow-x: auto;
+                        scrollbar-width: none;
+
+                        &::-webkit-scrollbar {
+                            display: none;
+                        }
+
+
+                        // .card {
+
+                        //     border-radius: 8px 8px 0 0;
+                        //     border: 1px solid #e1e4e5;
+
+                        //     .card-imgs {
+                        //         position: relative;
+                        //         width: 350px;
+
+
+                        //         .card-img {
+
+                        //             height: 213.21;
+                        //             width: 100%;
+                        //             border-radius: 8px 8px 0 0;
+                        //         }
+
+                        //         .card-icon {
+                        //             position: absolute;
+                        //             top: 16px;
+                        //             right: 0;
+                        //             width: 78px;
+                        //             height: 56px;
+                        //             display: flex;
+                        //             justify-content: center;
+                        //             align-items: center;
+                        //             background-color: #fff;
+                        //             border-radius: 6px 0 0 6px;
+
+                        //             img {
+                        //                 width: 100%;
+                        //                 border-radius: 6px 0 0 6px;
+                        //             }
+                        //         }
+                        //     }
+
+                        //     .card-texts {
+                        //         grid-row-gap: 16px;
+                        //         flex-direction: column;
+                        //         align-items: flex-start;
+                        //         display: flex;
+                        //         padding: 28px;
+
+                        //         .card-text {
+                        //             font-size: 12px;
+                        //             margin-bottom: 8px;
+                        //             color: #6f787b;
+                        //             display: grid;
+                        //             grid-template-columns: auto auto auto;
+                        //             column-gap: 12px;
+                        //         }
+
+                        //         &:last-child {
+                        //             font-size: 16px;
+                        //             color: #141719;
+                        //         }
+                        //     }
+
+
+
+                        // }
+                    }
+                }
+
+                .slider-scrollbar-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .slider-scrollbar {
+                        height: 24px;
+                        width: 90%;
+                        display: flex;
+                        align-items: center;
+
+                        // &:hover {
+                        //     .scrollbar-track {
+                        //         height: 4px;
+                        //     }
+                        // }
+
+
+
+                        .scrollbar-track {
+                            position: relative;
+                            height: 2px;
+                            width: 100%;
+                            background: #ccc;
+                            border-radius: 4px;
+
+
+
+                            .scrollbar-thumb {
+                                position: absolute;
+                                height: 100%;
+                                width: 40%;
+                                background: #182CC0;
+                                border-radius: inherit;
+                                cursor: grab;
+
+                                // &:active {
+                                //     cursor: grabbing;
+                                //     height: 5px;
+                                //     top: -2px;
+                                // }
+
+                                &::after {
+                                    content: '';
+                                    position: absolute;
+                                    left: 0;
+                                    right: 0;
+                                    top: -10px;
+                                    bottom: -10px;
+                                }
+                            }
+                        }
+
+                    }
+
+                    .buttons {
+
+                        padding-left: 20px;
+
+                        display: grid;
+                        grid-template-columns: 30px 30px;
+
+                        .slide-button {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 30px;
+                            width: 30px;
+                            background: none;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                        }
+
+                        #prev-slide {
+                            display: none;
+                        }
+
+                        #next-slide {
+                            display: none;
+                        }
+                    }
+
+
+                }
+
+
+
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+    }
+
+    .digital-bank-component {
+        margin: 60px 0;
+        width: 100%;
+        background-color: #fff;
+        margin-left: auto;
+        margin-right: auto;
+
+        .digital-bank-wrapper {
+            padding-left: 47px;
+            padding-right: 47px;
+
+            .digital-bank-wrapper-container {
+
+                max-width: 1110px;
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                height: 414px;
+
+                .digital-bank-text {
+                    width: 45%;
+                    grid-row-gap: 16px;
+                    flex-direction: column;
+                    flex: none;
+                    align-items: flex-start;
+                    display: flex;
+                    justify-content: center;
+                    height: 100%;
+
+                    .txt-1 {
+                        color: #141719;
+                        margin-top: 0;
+                        font-size: 24px;
+                        font-weight: 700;
+                    }
+
+                    .txt-2 {
+                        color: #555F62;
+
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+
+                    .digital-bank-icons {
+                        display: flex;
+                        flex-direction: row;
+
+                        a {
+                            margin-right: 16px;
+                            ;
+                            border: 1px solid #e1e4e5;
+                            border-radius: 4px;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 16px 32px;
+&:hover{background-color: #f9fafa;}
+                            img {
+                                // width: 68px;
+                                // height: 17px;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                    }
+                }
+
+            }
+
+            .img {
+                height: 373px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+
+    .products-wrapper{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+    }
+    .card-title{
+        color: #141719;
+        margin-top: 0;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .card-info-text {
+        font-size: 14px;
+        font-weight: 400;
+        color: #555F62;
+        span{
+            font-weight: bold;
+        }
+
+    }
+.width-350{
+    width: 350px;
+}
+    .card {
+
+        border-radius: 8px ;
+        border: 1px solid #e1e4e5;
+
+        .card-imgs {
+            position: relative;
+            width: 350px;
+
+
+            .card-img {
+
+                height: 213.21;
+                width: 100%;
+                border-radius: 8px 8px 0 0;
+            }
+
+            .card-icon {
+                position: absolute;
+                top: 16px;
+                right: 0;
+                width: 78px;
+                height: 56px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #fff;
+                border-radius: 6px 0 0 6px;
+
+                img {
+                    width: 100%;
+                    border-radius: 6px 0 0 6px;
+                }
+            }
+        }
+
+        .card-texts {
+            grid-row-gap: 16px;
+            flex-direction: column;
+            align-items: flex-start;
+            display: flex;
+            padding: 28px;
+            .card-text {
+                font-size: 12px;
+                margin-bottom: 8px;
+                color: #6f787b;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                column-gap: 12px;
+            }
+
+            &:last-child {
+                font-size: 16px;
+                color: #141719;
+            }
+        }
+
+
+
+    }
+
+}
