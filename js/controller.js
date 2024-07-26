@@ -36,14 +36,18 @@ const showMenu = (toggledId, navId) => {
     const toggle = document.getElementById(toggledId)
 
     const nav = document.getElementById(navId)
-    let body = document.getElementById('page-body')
+    let body1 = document.getElementById('page-body-1')
+    let body2 = document.getElementById('page-body-2')
+    let body3 = document.getElementById('page-body-3')
     toggle.addEventListener('click', () => {
         nav.classList.toggle('opacity-0')
         nav.classList.toggle('show_menu')
         toggle.classList.toggle('show_icon')
         document.getElementById('nav__close').classList.toggle('nav__close__opacity-0')
         document.getElementById('nav__burger').classList.toggle('nav__close__opacity-0')
-        body.classList.toggle('none')
+        body1.classList.toggle('none')
+        body2.classList.toggle('none')
+        body3.classList.toggle('none')
 
     })
 }
@@ -56,11 +60,12 @@ showMenu('header_menu-button', 'topnav_middle_menu')
 //handle slideshow
 
 const initSlider = (e) => {
-    const slidercomponent = document.querySelector(e)
+    const slidercomponent = document.getElementById(e)
     const slideButtons = slidercomponent.querySelectorAll(".slide-button");
     const imageList = slidercomponent.querySelector(".image-list");
     const slideScrollBar = slidercomponent.querySelector(".slider-scrollbar");
     const slideScrollThumb = slideScrollBar.querySelector(".scrollbar-thumb");
+    const sliderWrapper=slidercomponent.querySelector(".slider-wrapper");
     const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
 
     /////handle Thumb
@@ -108,9 +113,15 @@ const initSlider = (e) => {
 
     //handle buttons appearance
     const handleSlideButtons = () => {
-        slideButtons[0].style.display = "block";
+        const windowWidth = window.innerWidth;
+        if(windowWidth >=767){
+           slideButtons[0].style.display = "block";
 
-        slideButtons[1].style.display = "block";
+        slideButtons[1].style.display = "block"; 
+        }
+ 
+        sliderWrapper.classList.remove("padding-47px")
+        
     }
 
     //handle img slide move
@@ -119,6 +130,23 @@ const initSlider = (e) => {
         updateScrollThumbPosition()
     })
 
-}
 
-window.addEventListener("load", initSlider(".slider-component"))
+
+}
+window.addEventListener('load', handleResize)
+window.addEventListener("load", initSlider("slider-component-1"))
+window.addEventListener("load", initSlider("slider-component-2"))
+window.addEventListener("load", initSlider("slider-component-3"))
+window.addEventListener('resize', handleResize)
+
+
+function handleResize() {
+    // const windowWidth = window.innerWidth;
+    const slidercomponent = document.getElementById("slider-component-3")
+    const slideScrollBar = slidercomponent.querySelector(".slider-scrollbar");
+
+    const width = slideScrollBar.getBoundingClientRect().width;
+
+    width == 1110 ? slideScrollBar.style.display = "none" : slideScrollBar.style.display = "block";
+
+}

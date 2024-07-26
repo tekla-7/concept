@@ -6,7 +6,7 @@
             height: 80px;
             background-color: #fff;
             border-bottom: 1px solid #eef1f1;
-            padding-right: 47px;
+            padding-right: 45px;
             position: fixed;
             top: 0;
             bottom: auto;
@@ -34,9 +34,7 @@
 
             }
 
-            .header_logo_mobile {
-                display: none;
-            }
+           
 
             .topnav_left_menu {
                 text-align: center;
@@ -201,18 +199,18 @@
 
             }
 
-            .language-dropdown {
-                display: none;
+           .language-dropdown {
+        display: none;
 
-                .lang_toggle {
-                    display: none;
-                }
+        .lang_toggle {
+            display: none;
+        }
 
-                .lang_list-wrapper {
-                    display: none;
+        .lang_list-wrapper {
+            display: none;
 
-                }
-            }
+        }
+    }
 
 
             .show_icon .nav__burger {
@@ -260,8 +258,10 @@
         }
 
     }
-
-
+    
+ .header_logo_mobile {
+                display: none;
+            }
     .header_dropdown-bg {
         display: none;
         opacity: 0;
@@ -271,7 +271,11 @@
             opacity: 0;
         }
     }
+    .header_logo {
+        color: #555f62;
 
+    }
+    
     .button-desktop {
         display: none;
         opacity: 0;
