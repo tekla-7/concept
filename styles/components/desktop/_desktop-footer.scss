@@ -14,6 +14,10 @@
         padding-left: 47px;
         padding-right: 47px;
 
+        .footer-mobile {
+            display: none;
+        }
+
         .footer_elements {
             height: 131px;
             z-index: 103;
@@ -44,6 +48,10 @@
 
                 }
 
+            }
+
+            .padding-56px {
+                padding-bottom: 45px;
             }
 
             .footer-middle {
@@ -120,12 +128,14 @@
                         margin-right: 8px;
                     }
                 }
-                .footer-bottom-right{
-                    .mr-35{
-                        margin-right:  35px;;
+
+                .footer-bottom-right {
+                    .mr-35 {
+                        margin-right: 35px;
+                        ;
                     }
                 }
-               
+
             }
         }
     }

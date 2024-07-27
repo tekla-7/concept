@@ -249,6 +249,7 @@
     .width-350 {
         width: 50vw;
         max-width: 350px;
+        min-width: 240px;
     }
 
     .desktop {
@@ -301,10 +302,9 @@
             // width: 350px;
             width: 100%;
             background-color: #555F62;
-
+height: 51%;
             .card-img {
 
-                height: 100%;
                 width: 100%;
                 border-radius: 8px 8px 0 0;
             }

@@ -6,7 +6,7 @@
             height: 80px;
             background-color: #fff;
             border-bottom: 1px solid #eef1f1;
-            padding-right: 45px;
+             padding-right: 45px;
             position: fixed;
             top: 0;
             bottom: auto;
@@ -34,18 +34,21 @@
 
             }
 
-           
+.mt-32px{
+    margin-bottom: 32px;
+}
 
             .topnav_left_menu {
                 text-align: center;
-                padding-left: 47px;
-
+                padding-left: 45px;
+position: absolute;
+left: 0;
                 .header_logo {
                     color: #555f62;
 
                 }
             }
-            
+
 
             .show_menu {
                 opacity: 1;
@@ -57,9 +60,10 @@
                 overflow: auto;
                 transition: top .4s, opacity .3s;
             }
+           
 
             .opacity-0 {
-                opacity: 0;
+                display: none;
             }
 
             .topnav_middle_menu_item {
@@ -68,6 +72,7 @@
                 left: 0px;
                 flex: 1;
                 align-items: center;
+                width: 100%;
 
                 .bottom-border {
                     height: auto;
@@ -175,7 +180,9 @@
             //////////////////////////////////////
             .topnav_right_menu {
                 grid-column-gap: 16px;
-
+                padding-right: 45px;
+position:absolute;
+right: 0;
                 .search-button {
                     cursor: pointer;
                     justify-content: center;
@@ -199,18 +206,18 @@
 
             }
 
-           .language-dropdown {
-        display: none;
+            .language-dropdown {
+                display: none;
 
-        .lang_toggle {
-            display: none;
-        }
+                .lang_toggle {
+                    display: none;
+                }
 
-        .lang_list-wrapper {
-            display: none;
+                .lang_list-wrapper {
+                    display: none;
 
-        }
-    }
+                }
+            }
 
 
             .show_icon .nav__burger {
@@ -258,10 +265,11 @@
         }
 
     }
-    
- .header_logo_mobile {
-                display: none;
-            }
+
+    .header_logo_mobile {
+        display: none;
+    }
+
     .header_dropdown-bg {
         display: none;
         opacity: 0;
@@ -271,11 +279,12 @@
             opacity: 0;
         }
     }
+
     .header_logo {
         color: #555f62;
 
     }
-    
+
     .button-desktop {
         display: none;
         opacity: 0;

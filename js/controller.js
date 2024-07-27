@@ -2,6 +2,13 @@ document.querySelector('.topnav_middle_menu').addEventListener('click', function
     console.log(e.target)
 })
 
+document.getElementById("arrow-link").addEventListener('click',function(e){
+    document.querySelector(".cookies_block").style.display="none"
+})
+document.getElementById("button-menu_button").addEventListener('click',function(e){
+    // dissapear.querySelector(".buttons-list").classList.remove('dissapear')
+    document.querySelector(".buttons-list").classList.toggle('appear')
+})
 
 
 //handle show ul element
@@ -9,15 +16,19 @@ function open_menu(id) {
     let clicked = document.getElementById(`drop-menu-${id}`);
     let back = document.getElementById('header_dropdown_bg_img');
 
+    
     if (clicked.style.display == 'block') {
         back.classList.toggle('none')
         back.style.display = 'none';
+        clicked.style.display = 'none';
         display_none()
     }
     else {
         display_none()
+        
         back.style.display = 'block';
         clicked.style.display = 'block';
+        back.classList.remove("open")
 
     }
 }
@@ -26,6 +37,9 @@ function display_none() {
     document.getElementById('drop-menu-1').style.display = 'none';
     document.getElementById('drop-menu-2').style.display = 'none';
     document.getElementById('drop-menu-3').style.display = 'none';
+    document.getElementById('drop-menu-4').style.display = 'none';
+    document.getElementById('drop-menu-5').style.display = 'none';
+    document.getElementById('drop-menu-6').style.display = 'none';
 }
 
 
@@ -39,6 +53,8 @@ const showMenu = (toggledId, navId) => {
     let body1 = document.getElementById('page-body-1')
     let body2 = document.getElementById('page-body-2')
     let body3 = document.getElementById('page-body-3')
+    let body4 = document.getElementById('page-body-4')
+
     toggle.addEventListener('click', () => {
         nav.classList.toggle('opacity-0')
         nav.classList.toggle('show_menu')
@@ -48,6 +64,7 @@ const showMenu = (toggledId, navId) => {
         body1.classList.toggle('none')
         body2.classList.toggle('none')
         body3.classList.toggle('none')
+        body4.classList.toggle('none')
 
     })
 }
@@ -66,6 +83,7 @@ const initSlider = (e) => {
     const slideScrollBar = slidercomponent.querySelector(".slider-scrollbar");
     const slideScrollThumb = slideScrollBar.querySelector(".scrollbar-thumb");
     const sliderWrapper=slidercomponent.querySelector(".slider-wrapper");
+    
     const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
 
     /////handle Thumb
@@ -93,8 +111,7 @@ const initSlider = (e) => {
         document.addEventListener("mousemove", handleMouseMove)
         document.addEventListener("mouseup", handleMouseUp)
     })
-
-
+   
     const updateScrollThumbPosition = () => {
         const scrollPosition = imageList.scrollLeft;
         const thumbPosition = (scrollPosition / maxScrollLeft) * (slideScrollBar.clientWidth - slideScrollThumb.offsetWidth)
@@ -150,3 +167,11 @@ function handleResize() {
     width == 1110 ? slideScrollBar.style.display = "none" : slideScrollBar.style.display = "block";
 
 }
+
+
+
+
+
+///////////////////////////////////////
+
+
