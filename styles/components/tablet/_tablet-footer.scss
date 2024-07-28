@@ -2,19 +2,9 @@
     .footer {
         z-index: 100;
 
-        background-color: #fff;
-        border-bottom: 1px solid #eef1f1;
-        // padding-left: 47px;
-        // padding-right: 47px;
-        // position: fixed;
-        // top: 0;
-        // bottom: auto;
-        // left: 0;
-        // right: 0;
-
-        // position: fixed;
-        // left: 0;
-        // bottom: 0;
+        background-color:$topnav-bc-color;
+        border-bottom: 1px solid $border-color;
+       
         .footer_elements {
             height: 131px;
             z-index: 103;
@@ -27,8 +17,8 @@
                 width: 100%;
                 padding-top: 45px;
                 padding-bottom: 50px;
-                padding-left: 45px;
-                padding-right: 45px;
+                padding-left:    $tablet-margin;
+                padding-right:    $tablet-margin;
 
                 .footer_top-inner {
 
@@ -37,10 +27,7 @@
                     flex-direction: row;
                     justify-content: space-between;
 
-                    // .language-dropdown {
-                    //     position: absolute;
-                    //     right: 0;
-                    // }
+                   
 
                 }
 
@@ -57,7 +44,7 @@
             position: relative;
 
             &:hover {
-                background-color: #f9fafa;
+                background-color:$header-bc-color;
 
                 .lang_list-wrapper {
                     opacity: 2;
@@ -90,9 +77,9 @@
                 right: 0;
 
                 .lang_list {
-                    color: #141719;
-                    background-color: #fff;
-                    border: 1px solid #e1e4e5;
+                    color: $text-color;
+                    background-color:$topnav-bc-color;
+                    border: 1px solid $card-border-color;
                     border-radius: 4px;
                     flex-direction: column;
                     padding-top: 8px;
@@ -130,7 +117,7 @@
             padding-top: 56px;
         }
         .title {
-            color: #141719;
+            color: $text-color;
             padding-bottom: 24px;
             font-weight: 700;
             font-size: 14px;
@@ -138,7 +125,7 @@
 
         .mb-20px {
             margin-bottom: 20px;
-            color: #555f62;
+            color:$banner-text-color;
         }
 
         .info-wrapper {
@@ -160,7 +147,7 @@
                 margin-right: 4px;
                 width: 40px;
                 height: 40px;
-                background-color: #f9fafa;
+                background-color:$header-bc-color;
                 border-radius: 6px;
                 justify-content: center;
                 align-items: center;
@@ -177,58 +164,7 @@
     }
 
 
-    // .footer-middle {
-    //     padding-bottom: 45px;
-    //     width: 100%;
-    //     display: grid;
-    //     grid-template-columns: auto auto auto auto;
 
-    //     .title {
-    //         color: #141719;
-    //         padding-bottom: 24px;
-    //         font-weight: 700;
-    //         font-size: 14px;
-    //     }
-
-    //     .mb-20px {
-    //         margin-bottom: 20px;
-    //         color: #555f62;
-    //     }
-
-    //     .info-wrapper {
-    //         display: flex;
-    //         align-items: center;
-    //         justify-items: center;
-
-    //         .img-wrapper {
-    //             display: flex;
-    //             align-items: center;
-    //             justify-items: center;
-    //             margin-right: 10px;
-
-
-    //         }
-
-    //         .fb-wrapper {
-
-    //             margin-right: 4px;
-    //             width: 40px;
-    //             height: 40px;
-    //             background-color: #f9fafa;
-    //             border-radius: 6px;
-    //             justify-content: center;
-    //             align-items: center;
-    //             display: flex;
-
-    //         }
-
-    //         img {
-    //             width: 16px;
-    //             height: 16px;
-    //         }
-    //     }
-
-    // }
 
     
     .mt-32px{
@@ -240,7 +176,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        border-top: 1px solid #eef1f1;
+        border-top: 1px solid $border-color;
         padding-left: 45px;
         font-size: 12px;
 width: 100%;

@@ -7,8 +7,8 @@
         .topnav {
             z-index: 100;
             height: 80px;
-            background-color: #fff;
-            border-bottom: 1px solid #eef1f1;
+            background-color: $topnav-bc-color;
+            border-bottom: 1px solid $border-color;
             position: fixed;
             top: 0;
             bottom: auto;
@@ -21,18 +21,10 @@
                 height: 100%;
 
                 grid-column-gap: 12px;
-                // justify-content: flex-start;
-                // margin-right: auto;
-                // position: relative;
-                // grid-template-columns: auto auto auto;
-                // justify-content: space-between;
-                // align-items: center;
-                // margin-left: auto;
-                // display: flex;
-                // display: grid;
-display: flex;
-align-items: center;
-                // margin-right: auto;
+
+                display: flex;
+                align-items: center;
+
                 position: relative;
 
             }
@@ -43,11 +35,12 @@ align-items: center;
 
             .topnav_left_menu {
                 text-align: center;
-                padding-left: 30px;
+                padding-left: $mobile-margin;
                 position: absolute;
                 left: 0;
+
                 .header_logo_mobile {
-                    color: #555f62;
+                    color: $banner-text-color;
 
                 }
             }
@@ -58,13 +51,15 @@ align-items: center;
                 top: 3.5rem;
 
             }
-.mt-32px{
-    padding-left: 30px;
-    padding-right: 30px;
-}
+
+            .mt-32px {
+                padding-left: $mobile-margin;
+                padding-right: $mobile-margin;
+            }
+
             .topnav_middle_menu {
                 width: 100%;
-                padding-right: 30px;
+                padding-right: $mobile-margin;
                 overflow: auto;
                 transition: top .4s, opacity .3s;
             }
@@ -74,14 +69,14 @@ align-items: center;
                 // opacity: 0;
             }
 
-           
+
 
 
 
             //////////////////////////////////////
             .topnav_right_menu {
                 grid-column-gap: 16px;
-                padding-right: 30px;
+                padding-right: $mobile-margin;
                 position: absolute;
                 right: 0;
 
@@ -97,7 +92,7 @@ align-items: center;
 
             .arrow-link {
                 grid-column-gap: 6px;
-                color: #182cc0;
+                color:$hover-button-color;
                 text-transform: uppercase;
                 flex: none;
                 align-items: center;
@@ -174,27 +169,23 @@ align-items: center;
         left: 0px;
         flex: 1;
         align-items: center;
-width: 100%;
+        width: 100%;
+
         .bottom-border {
             height: auto;
 
-            // transition: height 2s;
+          
             border-bottom: 1px solid #d1d5d6;
         }
 
         .button-height {
             height: 96px;
-            padding: 30px;
+            padding: $mobile-margin;
         }
 
-        // .grow-1{
-        //     width: 100vw;
-        //     height: 96px;
-
-        //     overflow: hidden;
-        // }
+       
         button {
-            background-color: red;
+           
             height: 100%;
             width: 100vw;
             height: 100%;
@@ -211,7 +202,7 @@ width: 100%;
 
         ul {
 
-            padding: 0 30px 32px 30px;
+            padding: 0 $mobile-margin 32px $mobile-margin;
             overflow: hidden;
 
 
@@ -230,14 +221,14 @@ width: 100%;
                     align-items: center;
                     text-decoration: none;
                     text-align: left;
-                    color: #555f62;
+                    color: $banner-text-color;
                     // background-color: #f9fafa;
                     font-size: 14px;
                     font-weight: 400;
                     line-height: 1.7;
 
                     &:hover {
-                        color: #182cc0;
+                        color:$hover-button-color;
                     }
                 }
 
@@ -284,7 +275,7 @@ width: 100%;
             opacity: 0;
         }
     }
-   
+
 
     .button-desktop {
         display: none;

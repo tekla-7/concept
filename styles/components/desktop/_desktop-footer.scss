@@ -2,18 +2,18 @@
     .footer {
         z-index: 100;
 
-        background-color: #fff;
-        border-bottom: 1px solid #eef1f1;
-        // padding-left: 47px;
-        // padding-right: 47px;
+        background-color: $topnav-bc-color;
+        border-bottom: 1px solid $border-color;
+        // padding-left: $desktop-padding;
+        // padding-right: $desktop-padding;
         // position: fixed;
         // top: 0;
         // bottom: auto;
         // left: 0;
         // right: 0;
-        padding-left: 47px;
-        padding-right: 47px;
-
+        // padding-left: $desktop-padding;
+        // padding-right: $desktop-padding;
+width: 100%;
         .footer-mobile {
             display: none;
         }
@@ -23,7 +23,7 @@
             z-index: 103;
             width: 100%;
             height: 100%;
-            max-width: 1110px;
+            // max-width: 1110px;
             margin-left: auto;
             margin-right: auto;
 
@@ -32,8 +32,9 @@
                 width: 100%;
                 padding-top: 45px;
                 padding-bottom: 50px;
-
-
+                max-width: 1110px;
+                margin-left: auto;
+                margin-right: auto;
                 .footer_top-inner {
 
                     width: 100%;
@@ -55,13 +56,15 @@
             }
 
             .footer-middle {
+                max-width: 1110px;
+                margin-left: auto;
+                margin-right: auto;
                 padding-bottom: 45px;
-                width: 100%;
                 display: grid;
                 grid-template-columns: auto auto auto auto;
 
                 .title {
-                    color: #141719;
+                    color: $text-color;
                     padding-bottom: 24px;
                     font-weight: 700;
                     font-size: 14px;
@@ -69,7 +72,7 @@
 
                 .mb-20px {
                     margin-bottom: 20px;
-                    color: #555f62;
+                    color: $banner-text-color;
                 }
 
                 .info-wrapper {
@@ -91,7 +94,7 @@
                         margin-right: 4px;
                         width: 40px;
                         height: 40px;
-                        background-color: #f9fafa;
+                        background-color:$header-bc-color;
                         border-radius: 6px;
                         justify-content: center;
                         align-items: center;
@@ -106,15 +109,23 @@
                 }
 
             }
-
+            .footer-bottom-border{
+                width: 100%;
+                height: 1px;
+                border-top: 1px solid $border-color;
+            
+            }
             .footer-bottom {
+                width: 100%;
                 height: 88.8px;
                 padding: 28px 0;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                border-top: 1px solid #eef1f1;
-
+               
+                max-width: 1110px;
+                margin-left: auto;
+                margin-right: auto;
                 font-size: 12px;
 
                 .footer-bottom-left {
@@ -138,5 +149,9 @@
 
             }
         }
+        
     }
+
+
+
 }

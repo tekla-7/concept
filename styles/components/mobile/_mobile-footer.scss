@@ -2,8 +2,8 @@
     .footer {
         z-index: 100;
 
-        background-color: #fff;
-        border-bottom: 1px solid #eef1f1;
+        background-color:$topnav-bc-color;
+        border-bottom: 1px solid $border-color;
 
 
 
@@ -17,8 +17,8 @@
                 width: 100%;
                 padding-top: 36px;
                 padding-bottom: 36px;
-                padding-left: 30px;
-                padding-right: 30px;
+                padding-left: $mobile-margin;
+                padding-right: $mobile-margin;
 
                 .footer_top-inner {
 
@@ -53,7 +53,7 @@
             position: relative;
 
             &:hover {
-                background-color: #f9fafa;
+                background-color:$header-bc-color;
 
                 .lang_list-wrapper {
                     opacity: 2;
@@ -87,7 +87,7 @@
 
                 .lang_list {
                     color: #141719;
-                    background-color: #fff;
+                    background-color:$topnav-bc-color;
                     border: 1px solid #e1e4e5;
                     border-radius: 4px;
                     flex-direction: column;
@@ -125,7 +125,7 @@
 
         .mb-20px {
             margin-bottom: 20px;
-            color: #555f62;
+            color:$banner-text-color;
         }
 
         .info-wrapper {
@@ -147,7 +147,7 @@
                 margin-right: 4px;
                 width: 40px;
                 height: 40px;
-                background-color: #f9fafa;
+                background-color:$header-bc-color;
                 border-radius: 6px;
                 justify-content: center;
                 align-items: center;
@@ -169,12 +169,12 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        border-top: 1px solid #eef1f1;
-        padding-left: 30px;
+        border-top: 1px solid $border-color;
+        padding-left: $mobile-margin;
         font-size: 12px;
 
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: $mobile-margin;
+        padding-right: $mobile-margin;
 
         .footer-bottom-left {
             display: flex;
@@ -205,10 +205,10 @@
         display: none;
     }
     .padding-30px{
-        padding: 0 30px;
+        padding: 0 $mobile-margin;
     }
     .padding-56px{
-        padding: 56px 30px 0 30px;
+        padding: 56px $mobile-margin 0 $mobile-margin;
     }
     .mt-32px {
         padding-top: 56px;
@@ -229,7 +229,7 @@
         button {
            z-index: 400;
             width: 100%;
-            padding: 36px 30px;
+            padding: 36px $mobile-margin;
             height: 108px;
             cursor: pointer;
             font-size: 18px;
@@ -246,7 +246,7 @@
 
         ul {
 
-            padding: 0 30px 36px 30px;
+            padding: 0 $mobile-margin 36px $mobile-margin;
             overflow: hidden;
             transition: top 1s, opacity .8s;
             transition: height .6s ease-in-out;
@@ -267,14 +267,14 @@
                     align-items: center;
                     text-decoration: none;
                     text-align: left;
-                    color: #555f62;
-                    // background-color: #f9fafa;
+                    color:$banner-text-color;
+                    // background-color:$header-bc-color;
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 1.7;
 
                     &:hover {
-                        color: #182cc0;
+                        color: $scrollbar-thumb-bc-color;
                     }
                 }
 

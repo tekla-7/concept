@@ -19,7 +19,7 @@ $small-font-size: 18px;
         width: 90%;
         max-width: 694px;
         grid-column-gap: 24px;
-        background-color: #fff;
+        background-color:$topnav-bc-color;
         // background-color: red;
         border-radius: 6px;
         justify-content: space-between;
@@ -36,7 +36,7 @@ $small-font-size: 18px;
         .arrow-link {
             cursor: pointer;
             grid-column-gap: 6px;
-            color: #182cc0;
+            color: $hover-button-color;
             text-transform: uppercase;
             flex: none;
             align-items: center;
@@ -51,79 +51,81 @@ $small-font-size: 18px;
 }
 
 
-.buttons-wrapper{
+.buttons-wrapper {
     position: fixed;
     bottom: 66px;
     right: 20px;
     z-index: 1000;
 
-    // grid-column-gap: 16px;
-    // grid-row-gap: 16px;
-    // flex-wrap: wrap;
-    // display: flex;
-    // flex-direction: row;
 }
-.dissapear{
+
+.dissapear {
     opacity: 0;
 }
 
-.bc-white{
-    
-    color: #424a4d; 
-    background-color: #fff;
+.bc-white {
+
+    color:$tooltip-bc-color;
+    background-color:$topnav-bc-color;
     margin-bottom: 12px;
-    &:hover{
-        color: #fff;
-    background-color: #3295ce;
+
+    &:hover {
+        color:$topnav-bc-color;
+        background-color: #3295ce;
     }
 }
-.bc-black{
-    color: #fff;
-   background-color: #424a4d;  
-   &:hover{
-    opacity:0.8;
-   }
+
+.bc-black {
+    color:$topnav-bc-color;
+    background-color:$tooltip-bc-color;
+
+    &:hover {
+        opacity: 0.8;
+    }
 }
-.button-menu_tooltip{
+
+.button-menu_tooltip {
     max-width: 109px;
     max-height: 38px;
-    color: #fff;
+    color:$topnav-bc-color;
     white-space: nowrap;
-    background-color: #424a4d;
+    background-color:$tooltip-bc-color;
     border-radius: 6px;
     padding: 8px 12px;
     font-size: 14px;
     transition: opacity .25s ease-in-out;
     position: absolute;
     right: 68px;
-     opacity: 0;
+    opacity: 0;
 
     pointer-events: none;
     transition: .4s;
     display: flex;
     flex-direction: column;
     display: flex;
-    
+
     align-items: flex-end;
 
-    .button-menu_tooltip-arrow{
-    position: absolute;
-    right: -6px;
-    bottom: 1px;
+    .button-menu_tooltip-arrow {
+        position: absolute;
+        right: -6px;
+        bottom: 1px;
     }
 }
+
 .button-menu_button {
-   &:hover{
-    .button-menu_tooltip{
-        opacity: 1;
+    &:hover {
+        .button-menu_tooltip {
+            opacity: 1;
+        }
     }
-   }
+
     z-index: 1000;
     width: 56px;
     height: 56px;
-   
+
     cursor: pointer;
-   
+
     border-radius: 50%;
     justify-content: center;
     justify-items: center;

@@ -1,29 +1,26 @@
 @media screen and (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+    $tablet-margin:45px;
     .margin-top-80 {
         margin-top: 80;
     }
 
     .body {
-        background-color: #f9fafa;
+        background-color: $header-bc-color;
 
-        // transition: opacity .1s, transform .4s;
-        // -webkit-transform: translate3d(0, 0, 0);
-        // transform: translate3d(0, 0, 0);
-        // width: 100vw;
-        padding-left: 45px;
-        padding-right: 45px;
+      
+        padding-left: $tablet-margin;
+        padding-right: $tablet-margin;
 
 
         .body-container {
-            // min-width: 677px;
-            // max-width: 1000px;
+          
             width: 100%;
             margin-left: auto;
             margin-right: auto;
 
             .currentpage-name-component {
                 padding: 24px 0;
-                color: #141719;
+                color:$text-color;
                 font-weight: 500;
 
             }
@@ -36,7 +33,7 @@
                 flex-direction: column;
 
                 .banner {
-                    color: #fff;
+                    color: $topnav-bc-color;
 
                     border-radius: 6px;
                     position: relative;
@@ -84,7 +81,7 @@
                                 margin-top: 20px;
                                 background-image: linear-gradient(15deg, #001682, #3240e5);
                                 grid-column-gap: 6px;
-                                color: #fff;
+                                color: $topnav-bc-color;
                                 text-transform: uppercase;
 
                                 border-radius: 4px;
@@ -140,7 +137,7 @@
 
                 p {
 
-                    color: #141719;
+                    color:$text-color;
                     font-size: 32px;
                     font-weight: 500;
                     line-height: 1.5;
@@ -153,7 +150,7 @@
 
                 .become-concept-text {
                     margin-bottom: 36px;
-                    color: #141719;
+                    color:$text-color;
                     margin-top: 0;
                     font-size: 24px;
                     font-weight: 700;
@@ -231,7 +228,7 @@
                         .concept-card-name {
 
                             font-size: 24px;
-                            color: #fff;
+                            color: $topnav-bc-color;
                             margin-bottom: 20px;
                         }
                     }
@@ -242,7 +239,6 @@
 
 
 
-
             .amount-of-data-component {
               padding: 50px 0;
                 display: grid;
@@ -250,12 +246,12 @@
                 grid-row-gap: 30px;
 
                 .data-card {
-                    background-color: #fff;
+                    background-color: $topnav-bc-color;
                     padding: 40px 48px;
                     border-radius: 8px;
 
                     .number {
-                        color: #141719;
+                        color:$text-color;
                         font-size: 44px;
                         font-weight: 700;
                         line-height: 1.3;
@@ -264,7 +260,7 @@
                     }
 
                     .name {
-                        color: #555f62;
+                        color:$banner-text-color;
                         font-size: 16px;
                     }
                 }

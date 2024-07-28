@@ -15,8 +15,7 @@ document.getElementById("button-menu_button").addEventListener('click',function(
 function open_menu(id) {
     let clicked = document.getElementById(`drop-menu-${id}`);
     let back = document.getElementById('header_dropdown_bg_img');
-
-    
+   
     if (clicked.style.display == 'block') {
         back.classList.toggle('none')
         back.style.display = 'none';

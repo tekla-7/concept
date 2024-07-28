@@ -1,5 +1,6 @@
 @media screen and (max-width:$mobile-width) {
-
+$mobile-padding:40px;
+$mobile-margin:30px;
 
     .body {
         background-color: #f9fafa;
@@ -19,20 +20,20 @@
 
             .currentpage-name-component {
                 padding: 24px 45px;
-                color: #141719;
+                color: $text-color;
                 font-weight: 500;
 
             }
 
             .subscription-component {
                 padding-top: 32px;
-                padding-bottom: 40px;
+                padding-bottom:$mobile-padding;
 
                 display: flex;
                 flex-direction: column;
 
                 .banner {
-                    color: #fff;
+                    color: $topnav-bc-color;
 
                     border-radius: 6px;
                     position: relative;
@@ -85,7 +86,7 @@
                                 margin-top: 20px;
                                 background-image: linear-gradient(15deg, #001682, #3240e5);
                                 grid-column-gap: 6px;
-                                color: #fff;
+                                color: $topnav-bc-color;
                                 text-transform: uppercase;
                                 width: 100%;
                                 border-radius: 4px;
@@ -141,7 +142,7 @@
 
                 p {
 
-                    color: #141719;
+                    color: $text-color;
                     font-size: 28px;
                     font-weight: 500;
                     line-height: 1.5;
@@ -153,7 +154,7 @@
 
                 .become-concept-text {
                     margin-bottom: 36px;
-                    color: #141719;
+                    color: $text-color;
                     margin-top: 0;
                     font-size: 24px;
                     font-weight: 700;
@@ -213,7 +214,7 @@
                         .concept-card-name {
 
                             font-size: 16px;
-                            color: #fff;
+                            color: $topnav-bc-color;
                             margin-bottom: 20px;
                         }
                     }
@@ -232,12 +233,12 @@
                 grid-row-gap: 30px;
 
                 .data-card {
-                    background-color: #fff;
-                    padding: 40px 48px;
+                    background-color: $topnav-bc-color;
+                    padding: $mobile-padding 48px;
                     border-radius: 8px;
 
                     .number {
-                        color: #141719;
+                        color: $text-color;
                         font-size: 44px;
                         font-weight: 700;
                         margin-bottom: 16px;
@@ -246,7 +247,7 @@
                     }
 
                     .name {
-                        color: #555f62;
+                        color:$banner-text-color;
                         font-size: 16px;
                     }
                 }

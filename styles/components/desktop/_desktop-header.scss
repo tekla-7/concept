@@ -1,4 +1,6 @@
 @media screen and (min-width:$desktop-width) {
+    $desktop-padding: 47px;
+    $grid-column-gap:32px;
     body {
         // color: $banner-text-color;
         background-color: $header-bc-color;
@@ -14,24 +16,24 @@
         .topnav {
             z-index: 100;
             height: 80px;
-            background-color: #fff;
-            border-bottom: 1px solid #eef1f1;
-            padding-left: 47px;
-             padding-right: 47px;
+            background-color:$topnav-bc-color;
+            border-bottom: 1px solid $border-color;
+            padding-left:  $desktop-padding;
+             padding-right:  $desktop-padding;
             position: fixed;
             top: 0;
             bottom: auto;
             left: 0;
             right: 0;
-            padding-left: 47px;
-            padding-right: 47px;
+            padding-left:  $desktop-padding;
+            padding-right:  $desktop-padding;
 
             .topnav_elements {
                 z-index: 103;
                 width: 100%;
                  height: 100%;
                 max-width: 1110px;
-                grid-column-gap: 32px;
+                grid-column-gap: $grid-column-gap;
                 justify-content: flex-start;
                 margin-right: auto;
                 position: relative;
@@ -64,7 +66,7 @@
                 height: 100%;
                 display: grid;
                 grid-template-columns: auto auto auto;
-                grid-column-gap: 32px;
+                grid-column-gap: $grid-column-gap;
                 flex: 1;
                 align-items: center;
                 margin-left: 40px;
@@ -81,7 +83,7 @@
                     height: 80px;
                     cursor: pointer;
                     font-size: 14px;
-                    color: #555f62;
+                    color:$banner-text-color;
                     font-weight: 400;
                     border: none;
                     background: none;
@@ -95,7 +97,7 @@
                         position: absolute;
                         left: 25%;
                         transform: translate(-50%, -50%);
-                        background-color: #182cc0;
+                        background-color:$hover-button-color;
                         animation: growLine 1s ease-in-out forwards;
 
                     }
@@ -121,8 +123,8 @@
 
                 ul {
                     min-width: 200px;
-                    margin-top: 32px;
-                    margin-bottom: 32px;
+                    margin-top: $grid-column-gap;
+                    margin-bottom: $grid-column-gap;
 
                     li {
                         list-style: none;
@@ -138,12 +140,12 @@
                             align-items: center;
                             text-decoration: none;
                             text-align: left;
-                            color: #555f62;
+                            color:$banner-text-color;
                             font-size: 16px;
                             font-weight: 400;
 
                             &:hover {
-                                color: #182cc0;
+                                color:$hover-button-color;
                             }
                         }
 
@@ -154,6 +156,7 @@
 
                 .drop-menu-item {
                     position: absolute;
+                    display: none;
                 }
 
                 @keyframes fadeIn {
@@ -197,7 +200,7 @@
 
             .arrow-link {
                 grid-column-gap: 6px;
-                color: #182cc0;
+                color:$hover-button-color;
                 text-transform: uppercase;
                 flex: none;
                 align-items: center;
@@ -229,9 +232,9 @@
         width: 100vw;
         z-index: 1;
         min-height: 248px;
-        background-color: #fff;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        background-color:$topnav-bc-color;
+        padding-top: $grid-column-gap;
+        padding-bottom: $grid-column-gap;
         transition: height .6s ease-in-out;
         display: none;
         position: absolute;
@@ -239,8 +242,8 @@
         bottom: auto;
         left: 0;
         right: 0;
-        padding-left: 47px;
-        padding-right: 47px;
+        padding-left:  $desktop-padding;
+        padding-right:  $desktop-padding;
 
         .container {
 
@@ -268,7 +271,7 @@
 
             .arrow-link {
                 grid-column-gap: 6px;
-                color: #182cc0;
+                color:$hover-button-color;
                 text-transform: uppercase;
                 flex: none;
                 align-items: center;
@@ -315,7 +318,7 @@
     }
 
     .header_logo {
-        color: #555f62;
+        color:$banner-text-color;
 
     }
 
@@ -357,8 +360,8 @@
             right: 0;
 
             .lang_list {
-                color: #141719;
-                background-color: #fff;
+                color:$text-color;
+                background-color:$topnav-bc-color;
                 border: 1px solid #e1e4e5;
                 border-radius: 4px;
                 flex-direction: column;

@@ -3,12 +3,10 @@
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
-    
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "start": " index.html",
+    "build": "build"
   },
   "author": "tekle",
   "license": "ISC",
   "description": ""
- 
 }
